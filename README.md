@@ -2,7 +2,7 @@
 
 
 ________________________________________________
-### Czym jest?
+## Czym jest?
 Aplikacja webowa napisana z użyciem framework'a Angular.
 Obsługuje zapytania POST, PUT i DELETE do api: https://reqres.in/api/users.
 Zapytania nie modyfikują bazy testowej, ale 
