@@ -1,0 +1,21 @@
+
+.close-btn, .save-btn {
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+.close-btn {
+    background-color: #b15b5b;
+}
+
+.save-btn {
+    background-color: #44001a;
+}
+
+.ml-15 {
+    margin-left: 15px;
+}
+

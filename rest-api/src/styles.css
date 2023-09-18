@@ -1,0 +1,18 @@
+body {
+    font-size: 18px;
+}
+
+table {
+    margin-top: 20px;
+}
+
+input {
+    margin: 12px;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.default-logo {
+    width: 50px;
+}

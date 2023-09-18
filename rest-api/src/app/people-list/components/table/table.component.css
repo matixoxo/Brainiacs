@@ -1,0 +1,31 @@
+.table>:not(caption)>*>th {
+    background-color: #b15b5b;
+}
+
+.b2 {
+    border-radius: 5px;
+    background-color: #44001a;
+    color: white;
+}
+
+.custom-bold {
+    font-family: 'Lato', sans-serif; 
+    margin-top: auto; 
+    margin-bottom: auto;
+    font-weight: none;
+}
+
+.col-mt-auto {
+    margin-top: auto;
+}
+
+.container-fluid-set {
+    width:80%;
+    margin-top: 50px
+}
+
+.btn-inline-l {
+    display: inline-flex;
+    align-items: center; 
+    margin-left: auto;
+}

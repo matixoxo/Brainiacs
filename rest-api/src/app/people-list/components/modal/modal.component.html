@@ -1,0 +1,89 @@
+<!-- <div *ngIf="this.mode === 'edit'; then editModal; this.mode === 'add'; then addModal else delModal"></div> -->
+    <ng-template #editModal [ngIf]="this.mode === 'edit'">
+        <div class="modal-header">
+            <h5 class="modal-title">Edit brainiac</h5>
+            <button type="button" class="btn-close" (click)="close()">
+            </button>
+        </div>
+        <div class="modal-body">
+            
+            <div class="container">
+                <div class="row input-group">
+                    <div class="col-6">
+                        <p class="h6 input-group ml-15">First name</p>
+                        <input #f_name class="input-group" value="{{first_name}}">
+                    </div>
+                    <div class="col-6">
+                        <p class="h6 input-group ml-15">Last name</p>
+                        <input #l_name class="input-group" value="{{last_name}}">
+                    </div>
+                </div>
+                <div class="row input-group">
+                    <div class="col-12">
+                        <p class="h6 input-group ml-15">E-mail</p>
+            <input #_email class="w-100 input-group" value="{{email}}">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="close-btn" (click)="close()">Close</button>
+            <button type="button" class="save-btn" (click)="saveAndClose(f_name.value, l_name.value, _email.value)">Save</button>
+        </div>
+    </ng-template>
+    <ng-template #addModal [ngIf]="this.mode === 'add'">
+        <div class="modal-header">
+            <h5 class="modal-title">Add new brainiac</h5>
+            <button type="button" class="btn-close" (click)="close()">
+
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="container">
+                <div class="row input-group">
+                    <div class="col-6">
+                        <p class="h6 input-group ml-15">First name</p>
+                        <input #f_name_add class="input-group" placeholder="Type in the first name">
+                    </div>
+                    <div class="col-6">
+                        <p class="h6 input-group ml-15">Last name</p>
+                        <input #l_name_add class="input-group" placeholder="Type in the last name">
+                    </div>
+                </div>
+                <div class="row input-group">
+                    <div class="col-12">
+                        <p class="h6 input-group ml-15">E-mail</p>
+            <input #_email_add class="w-100 input-group" placeholder="Type in the email">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="close-btn" (click)="close()">Close</button>
+            <button type="button" class="save-btn" (click)="saveAddAndClose(f_name_add.value, l_name_add.value, _email_add.value)">Save</button>
+        </div>
+    </ng-template>
+    <ng-template #delModal [ngIf]="this.mode === 'del'">
+        <div class="modal-header">
+            <h5 class="modal-title">Delete brainiac</h5>
+            <button type="button" class="btn-close" (click)="close()">
+
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="container">
+                <div class="row input-group">
+                    <div class="col-12">
+                        <p>Czy na pewno chcesz usunąć?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="close-btn" (click)="close()">Nie</button>
+            <button type="button" class="save-btn" (click)="rowDel()">Tak</button>
+        </div>
+    </ng-template>
+
+

@@ -1,0 +1,29 @@
+<div class="container-fluid container-fluid-set">
+    <div class="row align-middle" >
+        <div class="col">
+            <img src="../../../../assets/images/users.PNG" width="30px" height="30px">
+              <b class="custom-bold">List of smart guys</b>
+        </div>
+        <div class="col">
+            <button class="b2 btn-inline-l p-1 float-end" (click)="openModal()" ><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#ffffff}</style><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>  Add Brainiac</button>    
+        </div>
+    </div>
+    <table id="out" class="table table-striped align-middle">
+        <thead class="table-dark">
+          <tr>
+            <th class="custom-th" scope="col">ID</th>
+            <th scope="col"></th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">E-mail</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr app-row *ngFor="let i of daneAll" [id]="i.id" [first_name]="i.first_name"
+      [last_name]="i.last_name" [avatar]="i.avatar" [email]="i.email" (deleteEvent)="openModalThenDelById($event)">
+            </tr>   
+        </tbody>
+      </table>
+</div>
