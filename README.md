@@ -2,7 +2,7 @@
 
 # Czym jest?
 ________________________________________________
-Aplikacja webowa napisana we frameworku Angular.
+Aplikacja webowa napisana z użyciem framework'a Angular.
 Obsługuje zapytania POST, PUT i DELETE do api: https://reqres.in/api/users.
 Zapytania nie modyfikują bazy testowej, ale 
 odbierają poprawne kodu, potwierdzając, że wszystko działa.
