@@ -12,3 +12,6 @@ ________________________________________________
 Aplikacja służy do wyświetlania, dodawania, edycji oraz usuwania osób
 (czyt. Brainiacs).
 ________________________________________________
+### Jak uruchomić?
+Aby uruchomić aplikację trzeba najpierw poprać repozytorium, 
+następnie z poziomu folderu 'rest-api' użyć polecenia 'ng serve'.
